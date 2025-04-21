@@ -15,10 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::resource('index', UserController::class);
+Route::resource('/', UserController::class);
 Route::resource('users', UserController::class);
 Route::resource('empresas', EmpresaController::class);
